@@ -4,51 +4,87 @@
     box-sizing: border-box;
 }
 
-
-header{
+.navbar{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
-    /* background-color: rgba(204, 255, 0, 0.375); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.nav-bar{
-    width: 80%;
-    /* height: 100%; */
+.navbar .logo {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    /* background-color: azure; */
+    justify-self: center;
+    width: 20%;
+    padding-left: 10%;
 }
 
-.nav-bar .logo > img{
-    width: 69px;
-    border-radius: 30px 2.4px ;
-    margin: 10px;
-    opacity: .86;
+.navbar .logo a{
+    text-decoration: none;
+    font-family: cursive;
+    margin: 3px ;
+    font-size: 2rem;
+    letter-spacing: -3px;
+}
+
+.navbar .logo img{
+    width: 50px;
+    border-radius: 20px 4px;
 }
 
 .search-bar{
-    width: 60%;
-    /* background-color: rgba(0, 255, 255, 0.151); */
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 4rem;
+    justify-content: space-around;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(230, 227, 227, 0.484);
+    max-width: 600px;
+    /* max-height: 200px; */
+}
+.search-bar .search-section {
+    flex: 1;
+    margin-right: 10px;
+    padding: 15px;
+    border-radius: 50px;
+  }
+
+  .search-bar .search-section:hover{
+    background-color: #e3dbdd4f;
+  }
+  .search-bar label {
+    font-size: 12px;
+    color: #888;
+    display: block;
+  }
+
+  .search-bar input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 3px;
+  }
+
+  .search-bar button {
+    background-color: #ff385c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 10px;
+  }
+
+  .account-icon{
     border: 1px solid black;
-    border-radius: 150px;
-}
-
-.search-bar .time-place{
-    float: left;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1rem;
-}
-
-.time-place a{
-    text-decoration: none;
-}
+    padding: 10px;
+    border-radius: 12px;
+    font-size:1.5rem;
+  }
