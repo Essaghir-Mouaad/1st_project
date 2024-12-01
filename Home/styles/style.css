@@ -32,7 +32,6 @@
     width: 50px;
     border-radius: 20px 4px;
 }
-
 .search-bar{
     display: flex;
     align-items: center;
@@ -88,3 +87,4 @@
     border-radius: 12px;
     font-size:1.5rem;
   }
+  
