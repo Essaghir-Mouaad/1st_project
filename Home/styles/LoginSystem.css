@@ -1,0 +1,57 @@
+.log-sign {
+  position: absolute;
+  width: 15rem;
+  left: 79.3%;
+  top: 17%;
+  border: 2px solid rgb(236, 236, 236);
+  border-radius: 10px;
+  background-color: #ffffffe3;
+  transform: scaleY(0); 
+  transform-origin: top; 
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease; 
+  z-index: 1000;
+}
+
+.log-sign.active {
+  transform: scaleY(1); 
+  opacity: 1; 
+  position: fixed;
+}
+
+.log-sign ul {
+  height: 100%;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  margin: 5px;
+}
+
+.log-sign ul a {
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 12px;
+  margin: 2px;
+  font-size: 1.4rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.log-sign ul a:hover {
+  background-color: #aeaeae55;
+  color: rgb(0, 0, 0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .log-sign {
+    position: absolute; /* Keep aligned properly */
+    width: auto;
+    left: 63%;
+  }
+}

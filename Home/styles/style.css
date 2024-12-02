@@ -4,51 +4,154 @@
     box-sizing: border-box;
 }
 
+body{
+  width: 100%;
+  height: 1000vh;
+}
+ 
 
-header{
+.navbar{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
-    /* background-color: rgba(204, 255, 0, 0.375); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 7rem;
+    position: fixed;
+    box-shadow: 0 4px 6px rgba(230, 227, 227, 0.484);
 }
 
-.nav-bar{
-    width: 80%;
-    /* height: 100%; */
+.navbar .logo {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    /* background-color: azure; */
+    justify-self: center;
 }
 
-.nav-bar .logo > img{
-    width: 69px;
-    border-radius: 30px 2.4px ;
-    margin: 10px;
-    opacity: .86;
+.navbar .logo a{
+    text-decoration: none;
+    font-family: cursive;
+    margin: 3px ;
+    font-size: 2rem;
+    letter-spacing: -3px;
+}
+
+.navbar .logo img{
+    width: 50px;
+    border-radius: 20px 4px;
+}
+
+.search-part{
+  max-width: 700px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search-part .separate a{
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  font-weight: 600;
+  transition: .5s;
+}
+
+/* this line for dispatae the code when i scroll down */
+
+.hidden {
+  display: none;/* Make the element invisible */
+  pointer-events: none; /* Disable interactions */
+  transition: opacity 0.3s ease; /* Smooth fade out */
+}
+
+
+.search-part .separate a:hover{
+  color: rgba(0, 0, 0, 0.274);
 }
 
 .search-bar{
-    width: 60%;
-    /* background-color: rgba(0, 255, 255, 0.151); */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 4rem;
-    border: 1px solid black;
-    border-radius: 150px;
-}
-
-.search-bar .time-place{
-    float: left;
-    width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 1rem;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(230, 227, 227, 0.484);
+    max-width: 700px;
+    /* max-height: 200px; */
+}
+.search-bar .search-section {
+    flex: 1;
+    margin-right: 10px;
+    padding: 15px;
+    border-radius: 50px;
+  }
+
+  .search-bar .search-section:hover{
+    background-color: #e3dbdd4f;
+  }
+  .search-bar label {
+    font-size: 12px;
+    color: #888;
+    display: block;
+  }
+
+  .search-bar input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 3px;
+  }
+
+  .search-bar button {
+    background-color: #ff385c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 10px;
+  }
+.account-icon{
+  width:auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.167);
+  border-radius: 10px;
+  padding: 15px 8px;
+}
+.account-icon a{
+  text-decoration: none;
+  border-radius: 12px;
+  font-size:1.5rem;
+  /* padding-right: 1px; */
+  padding-left:5px ;
 }
 
-.time-place a{
-    text-decoration: none;
-}
+  @media (max-width: 700px) {
+    .navbar .logo {
+      display: none;
+    }
+    .search-bar{
+      width: 90%;
+    }
+    .account-icon{
+      width: 10%;
+      margin: 2px;
+      padding: 4px; 
+    }
+    /* .account-icon a{
+      padding: 4px; 
+    } */
+  }
+
+  
