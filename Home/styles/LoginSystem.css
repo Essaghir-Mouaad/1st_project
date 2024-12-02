@@ -16,6 +16,7 @@
 .log-sign.active {
   transform: scaleY(1); 
   opacity: 1; 
+  position: fixed;
 }
 
 .log-sign ul {
