@@ -81,6 +81,7 @@ body{
     border-radius: 50px;
     box-shadow: 0 4px 6px rgba(230, 227, 227, 0.484);
     max-width: 700px;
+    /* max-height: 200px; */
 }
 .search-bar .search-section {
     flex: 1;
