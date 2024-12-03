@@ -1,7 +1,7 @@
 .categories {
     display: flex;
     color: black;
-    justify-content: center;
+    align-items: center;
     justify-content: space-around;
     margin-top: 20px;
 }
